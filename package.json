@@ -13,6 +13,7 @@
   "author": "pravocodes",
   "license": "ISC",
   "dependencies": {
+    "antd": "^5.7.2",
     "bcrypt": "^5.1.0",
     "colors": "^1.4.0",
     "concurrently": "^8.2.0",
