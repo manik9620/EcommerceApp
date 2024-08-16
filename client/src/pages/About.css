@@ -1,0 +1,106 @@
+html, body, div, span, applet, object, iframe,
+h1, about-heading, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 10vw; /* Adjust the padding value as per your preference */
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+}
+
+.about-container:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("contact.png") no-repeat center;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.about-box {
+    width: 95%; /* Adjust the width value as per your preference */
+    margin: 40px auto; /* Increase the margin value to adjust the spacing */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left {
+    background-image: url("contact.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+.about-heading {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 20px; /* Increase the margin-bottom value to increase the space */
+}
+
+.about-heading:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.content-part {
+    font-style: oblique;
+     /* Change the alignment to justify */
+font-size: large;
+}    
+
+.right {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 880px) {
+    .about-box {
+        grid-template-columns: 1fr;
+    }
+    .left {
+        height: 200px;
+        flex-direction: column;
+    }
+}
+

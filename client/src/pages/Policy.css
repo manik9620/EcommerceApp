@@ -1,0 +1,281 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+about-heading,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.privacy-first-section h1 {
+  font-size: 56px;
+
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  margin: 20px 0 5px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  /* background: linear-gradient(to right, #8f339b, #00ff00);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  text-fill-color: transparent; */
+}
+
+.privacy-first-section h2 {
+  font-size: 26px;
+
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  margin: 2px 0 30px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  background: linear-gradient(to right, #ff7de9, #1a2bc7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.uppermost-paragraph {
+  font-size: 20px;
+  margin: 15px 0 20px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 25px;
+}
+.upper-paragraph {
+  font-size: 25px;
+  text-align: center;
+  /* justify-content: center; */
+  margin: 15px 0 40px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  /* font-weight: 700; */
+}
+
+.privacy-first-section {
+  /* position: relative; */
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.privacy-first-section:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  left: 0;
+  top: 0;
+  background: url("contact.png") no-repeat center;
+  background-size: cover; /* Adjust the image size to cover the entire element */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center center; /* Center the image within the element */
+  width: 100%; /* Set the width of the element */
+  height: 150%;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.privacy-second-section h1 {
+  font-size: 66px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  margin: 10px 0 30px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  background: linear-gradient(to right, #ff7de9, #1a2bc7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.privacy-second-section {
+  max-width: 90%;
+  margin: auto;
+  height: 130vh;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+}
+
+.accordion button {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.inner-parapraph {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.accordion {
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-first-section {
+    /* position: relative; */
+    max-width: 95%;
+    margin: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .privacy-second-section {
+    max-width: 95%;
+    margin: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .privacy-first-section:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("contact.png") no-repeat center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    /* height: 20px; */
+    /* height: 80%; */
+    filter: blur(50px);
+    z-index: -1;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .privacy-first-section {
+    /* position: relative; */
+    max-width: 95%;
+    margin: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .privacy-second-section {
+    max-width: 80%;
+    margin: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .privacy-first-section:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("contact.png") no-repeat center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    filter: blur(50px);
+    z-index: -1;
+  }
+}
