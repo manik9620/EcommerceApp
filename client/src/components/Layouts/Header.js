@@ -8,6 +8,7 @@ import { useAuth } from "../../context/Auth";
 import { Notyf } from "notyf";
 import { ReactComponent as Sun } from "./Sun.svg";
 import { ReactComponent as Moon } from "./Moon.svg";
+import Logo from "./Logo.png";
 import "./DarkMode.css";
 
 const notyf = new Notyf({
@@ -54,7 +55,8 @@ const Header = (props) => {
             {/* <FaShoppingCart />  */}
             <Link className="nav-link" to="/">
               <img
-                src="https://i.postimg.cc/rsjxY7z1/navbar-logo.png"
+              className="logoimg"
+                src={Logo}
                 width={90}
                 height={40}
                 alt="Logo"

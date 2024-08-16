@@ -10,6 +10,7 @@ import { createSearchParams, useNavigate } from "react-router-dom";
 import { useCart } from "../context/cart";
 import "./Homepage.css";
 import { motion } from "framer-motion";
+import carousel1 from "./images/carousel1.png";
 
 const notyf = new Notyf({
   duration: 2000,
@@ -132,7 +133,8 @@ const HomePage = (props) => {
         <div className="row mt-3">
           <div>
             <button
-              class="btn btn-primary "
+              class="btn"
+              className="filterbtn"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasWithBothOptions"
@@ -164,9 +166,7 @@ const HomePage = (props) => {
                 }`}
                 style={{ fontSize: "3vh" }}
               >
-                <b>
-                  <u>Filter by Category</u>
-                </b>
+                <b>Filter by Category</b>
               </h6>
               <div>
                 {categories?.map((c) => (
@@ -188,9 +188,7 @@ const HomePage = (props) => {
                   }`}
                   style={{ fontSize: "3vh" }}
                 >
-                  <b>
-                    <u>Filter by Prices</u>
-                  </b>
+                  <b>Filter by Prices</b>
                 </h6>
                 <div className="d-flex flex-coloumn ms-2">
                   <Radio.Group onChange={(e) => setRadio(e.target.value)}>
@@ -230,10 +228,10 @@ const HomePage = (props) => {
               class="carousel slide mb-5"
               data-bs-ride="carousel"
             >
-              <div class="carousel-inner ">
-                <div class="carousel-item active">
+              <div class="carousel-inner " >
+                <div class="carousel-item active" >
                   <img
-                    src="https://i.postimg.cc/ryhm3P0f/Untitled-1.png"
+                    src={carousel1}
                     class="d-block img-fluid mx-auto"
                     alt="Carousel-1"
                   />
@@ -291,27 +289,29 @@ const HomePage = (props) => {
                       <h5>{p.name}</h5>
                       {/* <span>{p.description.substring(0, 30)}</span> */}
                       <h4>${p.price}</h4>
-                      <span>Shipping Available: {p.shipping ? "Yes" : "No"}</span>
-                     <div className="buttons">
-                      <button
-                        className="cart"
-                        onClick={() => navigate(`/product/${p.slug}`)}
-                      >
-                        More Details
-                      </button>
-                      <button
-                        className="cart"
-                        onClick={() => {
-                          setCart([...cart, p]);
-                          localStorage.setItem(
-                            "cart",
-                            JSON.stringify([...cart, p])
-                          );
-                          notyf.success("Product added successfully");
-                        }}
-                      >
-                        Add to Cart
-                      </button>
+                      <span>
+                        Shipping Available: {p.shipping ? "Yes" : "No"}
+                      </span>
+                      <div className="buttons">
+                        <button
+                          className="cart"
+                          onClick={() => navigate(`/product/${p.slug}`)}
+                        >
+                          More Details
+                        </button>
+                        <button
+                          className="cart"
+                          onClick={() => {
+                            setCart([...cart, p]);
+                            localStorage.setItem(
+                              "cart",
+                              JSON.stringify([...cart, p])
+                            );
+                            notyf.success("Product added successfully");
+                          }}
+                        >
+                          Add to Cart
+                        </button>
                       </div>
                     </div>
                   </div>

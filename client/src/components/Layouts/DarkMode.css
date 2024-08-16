@@ -66,3 +66,10 @@
 .dark_mode_input:checked + .dark_mode_label svg.moon {
     fill: #fff;
 }
+
+
+.navbar .logoimg{
+    height: 70px;
+    width: 190px;
+    margin-left: 20px;
+}
